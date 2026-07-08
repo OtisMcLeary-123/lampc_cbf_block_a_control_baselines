@@ -1,0 +1,33 @@
+{
+  "scenario_id": "point_mass_2d_dynamic_obstacle_v1",
+  "robot": {
+    "model": "point_mass_2d",
+    "state": ["x", "y", "vx", "vy"],
+    "control": ["ax", "ay"],
+    "start": [0.0, 0.0, 0.0, 0.0],
+    "target": [5.0, 0.0]
+  },
+  "obstacle": {
+    "shape": "circle",
+    "radius": 0.35,
+    "initial_position": [2.5, -1.0],
+    "velocity": [0.0, 0.35]
+  },
+  "simulation": {
+    "dt": 0.1,
+    "horizon_steps": 20,
+    "max_steps": 100,
+    "dev_seeds": 10,
+    "paper_seeds": 50
+  },
+  "metrics": [
+    "success_rate",
+    "collision_rate",
+    "min_obstacle_distance_mean",
+    "min_obstacle_distance_std",
+    "path_length",
+    "completion_time",
+    "mean_solve_time_ms",
+    "solver_failure_rate"
+  ]
+}
