@@ -177,6 +177,50 @@ Current interpretation:
 - E4 shows CBF is more proactive than ED in this scenario: `gamma=0.08` increases mean clearance from `0.049 m` to `0.812 m` with similar solve time.
 - ED already has zero collision in this 10-seed dev scenario, so this scenario currently separates methods mainly by clearance, not collision rate.
 
+## Result Figures
+
+These figures are copied from the latest local `results/exp_e*/` run into `docs/figures/` so they render on GitHub.
+
+### E0: Smoke Tracking
+
+Trajectory:
+
+![E0 trajectory](docs/figures/e0_trajectory.png)
+
+Distance to obstacle:
+
+![E0 distance to obstacle](docs/figures/e0_distance_to_obstacle.png)
+
+### E2: MPC-ED
+
+Trajectory:
+
+![E2 trajectory](docs/figures/e2_trajectory.png)
+
+Distance to obstacle:
+
+![E2 distance to obstacle](docs/figures/e2_distance_to_obstacle.png)
+
+### E3: MPC-CBF Gamma Sweep
+
+Trajectory:
+
+![E3 trajectory](docs/figures/e3_trajectory.png)
+
+Distance to obstacle:
+
+![E3 distance to obstacle](docs/figures/e3_distance_to_obstacle.png)
+
+### E4: ED vs CBF
+
+Trajectory:
+
+![E4 trajectory](docs/figures/e4_trajectory.png)
+
+Distance to obstacle:
+
+![E4 distance to obstacle](docs/figures/e4_distance_to_obstacle.png)
+
 ## Initial Acceptance Criteria
 
 Block A is ready for GitHub/public baseline use when:
