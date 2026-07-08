@@ -1,8 +1,10 @@
-# Block A: Control Baselines
+# MPC-CBF Dynamic Obstacle Baselines
 
 ## Goal
 
-This repository contains the first reproducible block of the LaMPC-CBF reference micro-experiments.
+This repository contains reproducible Model Predictive Control (MPC) and Control Barrier Function (CBF) baselines for dynamic obstacle avoidance.
+
+It is Block A of the larger LaMPC-CBF reference micro-experiment workspace.
 
 Block A focuses on control baselines before any language/LLM interface is added:
 
