@@ -115,20 +115,44 @@ scripts/   runner and plotting entrypoints
 src/       shared implementation
 ```
 
+## Quickstart
+
+Install minimal dependencies:
+
+```bash
+python3 -m pip install -r requirements.txt
+```
+
+Run the smoke/dev benchmark:
+
+```bash
+bash scripts/run_block_a_smoke.sh
+```
+
+Run the 10-seed dev benchmark:
+
+```bash
+python3 scripts/run_e0_smoke.py --seeds 10
+python3 scripts/run_e2_mpc_ed.py --seeds 10
+python3 scripts/run_e3_mpc_cbf_sweep.py --seeds 10
+python3 scripts/run_e4_compare_ed_cbf.py --seeds 10 --gamma 0.08
+```
+
+Generated outputs are written under `results/exp_e*/` and are ignored by Git.
+
 ## Initial Acceptance Criteria
 
 Block A is ready for GitHub/public baseline use when:
 
-- E0, E2, E3, and E4 can run from scripted commands.
-- Each experiment writes a config-linked `summary.json`.
-- Each experiment records seed, method, scenario, and solver settings.
-- E4 produces trajectory and distance-to-obstacle plots.
+- E0, E2, E3, and E4 can run from scripted commands. Done in v1.
+- Each experiment writes a config-linked `summary.json`. Done in v1.
+- Each experiment records seed, method, scenario, and solver settings. Done in v1.
+- E4 produces trajectory and distance-to-obstacle plots. Done in v1.
 - Results can be reproduced without API keys or external LLM services.
 
 ## Next Implementation Steps
 
-1. Implement the 2D point-mass dynamics and shared scenario loader.
-2. Implement E0 solver smoke test.
-3. Implement E2 MPC-ED baseline.
-4. Implement E3 MPC-CBF gamma sweep.
-5. Implement E4 ED-vs-CBF comparison script and report.
+1. Run 50 seeds for paper-level Block A figures.
+2. Add a harder crossing scenario if ED-vs-CBF collision-rate separation is needed.
+3. Add a CasADi/do-mpc/IPOPT solver path for a closer reproduction of the reference implementation.
+4. Use Block A results as the control baseline for Block B and Block C.

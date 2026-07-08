@@ -19,6 +19,7 @@ Source reference list:
 | [10] | `ref10_zhang_2024_online_safety_critical_dynamic_obstacles.pdf` | https://arxiv.org/pdf/2402.16449 | Background | `1458e8a8b5879dbf37c6d831912d9c453b10f1026f5153b02adf60651d8c6c5e` |
 | [47] | `ref47_agrawal_2017_discrete_cbf.pdf` | https://roboticsproceedings.org/rss13/p73.pdf | E3 | `9018624cfdce8b2eb74c4705d549294530e3a71ae23c449c1b520c7125002632` |
 | [48] | `ref48_andersson_2019_casadi.pdf` | https://optimization-online.org/wp-content/uploads/2018/01/6420.pdf | E0, E2, E3, E4 | `55106413bd7b129b173b32fac5007de604031a3296df731cd9a37bfc4c214239` |
+| [51] | `ref51_fiedler_2023_do_mpc.pdf` | local user download from ScienceDirect: `/home/otismcleary/Documents/paper/1-s2.0-S0967066123002459-main.pdf` | E0, E2, E3, E4 | `529168d2800260e295310898795601ff7a16cf98a5f5e6dba779ac012a3d2bf9` |
 | [52] | `ref52_wachter_2006_ipopt_filter_line_search.pdf` | https://cepac.cheme.cmu.edu/pasilectures/biegler/ipopt.pdf | E0, E2, E3, E4 | `2cd76f3309d034cadba43a419403fb53d6c398f0fa4e63f274907800403f078c` |
 
 ## Metadata / Link Only
@@ -26,7 +27,6 @@ Source reference list:
 | Ref | Paper | Source URL | Status | Used by |
 |---|---|---|---|---|
 | [2] | Garcia, Prett, and Morari, "Model predictive control: Theory and practice - A survey," 1989 | https://www.sciencedirect.com/science/article/pii/0005109889900022 | No open PDF found from an authoritative source during this pass; publisher PDF returned 403. | E0, E2, E3, E4 |
-| [51] | Fiedler et al., "do-mpc: Towards FAIR nonlinear and robust model predictive control," 2023 | https://www.sciencedirect.com/science/article/pii/S0967066123002459 | Article is marked open access by ScienceDirect, but direct PDF download returned 403 from CLI. Use browser access or publisher page. | E0, E2, E3, E4 |
 
 ## Notes
 

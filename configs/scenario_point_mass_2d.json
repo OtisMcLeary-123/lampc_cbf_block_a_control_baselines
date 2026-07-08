@@ -5,7 +5,11 @@
     "state": ["x", "y", "vx", "vy"],
     "control": ["ax", "ay"],
     "start": [0.0, 0.0, 0.0, 0.0],
-    "target": [5.0, 0.0]
+    "target": [5.0, 0.0],
+    "radius": 0.12,
+    "max_speed": 1.4,
+    "max_accel": 2.2,
+    "target_tolerance": 0.18
   },
   "obstacle": {
     "shape": "circle",
@@ -18,7 +22,10 @@
     "horizon_steps": 20,
     "max_steps": 100,
     "dev_seeds": 10,
-    "paper_seeds": 50
+    "paper_seeds": 50,
+    "candidate_sequences": 384,
+    "seed_obstacle_position_std": [0.04, 0.08],
+    "seed_obstacle_velocity_std": [0.0, 0.025]
   },
   "metrics": [
     "success_rate",
